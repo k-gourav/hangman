@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --header-bg: #483198;
+    --header-light-bg: #A492E3;
+    --header-color: #FFFFFF;
+    --header-light-color: #DB6F6F;
+    --shadow-color: #898A8D;
+    --font-weight: 700;
+    --font-light-weight: 400;
+    --header-font: "Kavoon", serif;
+    --main-font: 'Inter', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--header-bg);
+}
+.topElement{
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--font-light-weight);
+    font-family: var(--header-font);
+    padding: 2rem 5rem;
+}
+.logo{
+    color: var(--header-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+.hintBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    color: var(--header-bg);
+    background-color: var(--header-color);
+    padding: 0.3rem 1.8rem;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+.hintBtn:hover{
+    cursor: pointer;
+}
+.hintTag{
+    width: 139px;
+    height: 28px;
+    background-color: var(--header-light-bg);
+    border-radius: 7px;
+    position: absolute;
+    top: 11.7%;
+    right: 27.15%;
+    display: none;
+    color: var(--header-color);
+    font-family: var(--main-font);
+    font-weight: var(--font-light-weight);
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+.hintArrow{
+    width: 15px; 
+    height: 15px;
+    border-radius: 2px;
+    background-color: var(--header-light-bg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 11%;
+    right: 31.1%;
+    display: none;
+    z-index: -1;
+}
+.healthMeter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 22px;
+    background-color: var(--header-color);
+    border-radius: 12px;
+}
+.progressLine{
+    width: 230px;
+    height: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--header-light-color);
+}
+.mainElement{
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+    padding: 4.5rem 0;
+    padding-left: 10rem;
+}
+.hangman{
+    width: 231.4px;
+    height: 400px;
+}
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 0.6rem;
+    justify-content: center;
+    width: 55%;
+}
+.keyword{
+    display: flex;
+    width: 50px;
+    height: 50.47px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-color);
+    color: var(--header-bg);
+    font-family: var(--main-font);
+    font-weight: var(--font-light-weight);
+    box-shadow: 0 0.1rem 0 var(--shadow-color);
+    border-radius: 5.54px;
+    border: none;
+    font-size: 1.5rem;
+}
+.letterSpace{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    gap: 8rem;
+    justify-content: space-around;
+}
+.letter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    width: 43%;
+}
+.wordLetter{
+    border-radius: 22px;
+    background-color: #A492E3;
+    color: var(--header-color);
+    font-family: var(--main-font);
+    font-weight: var(--font-weight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    font-size: 2rem;
+}
